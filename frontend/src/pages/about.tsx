@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Users, Target, Lightbulb, Award } from 'lucide-react';
+import { Users, Target, Lightbulb, Award, Code, Palette, Database } from 'lucide-react';
 import { useEffect } from 'react';
 
 export default function About() {
@@ -69,8 +69,94 @@ export default function About() {
         </div>
       </section>
 
-      {/* Founding Team */}
+      {/* Development Team Section */}
       <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-dark mb-4">Development Team</h2>
+            <p className="text-xl text-gray-medium max-w-2xl mx-auto">
+              The talented individuals who brought the 2PBAL platform to life through innovative technology.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Frontend Development - Blessing Mashiri */}
+            <Card className="text-center">
+              <CardHeader>
+                <div className="mx-auto w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mb-4">
+                  <Palette className="h-10 w-10 text-white" />
+                </div>
+                <CardTitle className="text-xl">Blessing Mashiri</CardTitle>
+                <CardDescription className="text-purple-600 font-semibold">Frontend Developer</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-medium mb-3">
+                  Innovative student at Bindura University specializing in user interface design and frontend development.
+                </p>
+                <div className="space-y-2">
+                  <Badge variant="secondary" className="mr-2">UI/UX Design</Badge>
+                  <Badge variant="secondary" className="mr-2">React</Badge>
+                  <Badge variant="secondary">Frontend</Badge>
+                </div>
+                <p className="text-sm text-gray-500 mt-3">
+                  Provided frontend development and user experience design
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Backend Development - Misheck Serima */}
+            <Card className="text-center">
+              <CardHeader>
+                <div className="mx-auto w-20 h-20 bg-gradient-to-br from-teal-primary to-blue-600 rounded-full flex items-center justify-center mb-4">
+                  <Database className="h-10 w-10 text-white" />
+                </div>
+                <CardTitle className="text-xl">Misheck Serima</CardTitle>
+                <CardDescription className="text-teal-primary font-semibold">Backend Developer</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-medium mb-3">
+                  Co-Founder & CEO with expertise in backend architecture and system design.
+                </p>
+                <div className="space-y-2">
+                  <Badge variant="secondary" className="mr-2">Backend</Badge>
+                  <Badge variant="secondary" className="mr-2">Architecture</Badge>
+                  <Badge variant="secondary">System Design</Badge>
+                </div>
+                <p className="text-sm text-gray-500 mt-3">
+                  Led backend development and system architecture
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Backend Development - Makanaka Mukorombindo */}
+            <Card className="text-center">
+              <CardHeader>
+                <div className="mx-auto w-20 h-20 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center mb-4">
+                  <Code className="h-10 w-10 text-white" />
+                </div>
+                <CardTitle className="text-xl">Makanaka Mukorombindo</CardTitle>
+                <CardDescription className="text-blue-600 font-semibold">Backend Developer & CTO</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-medium mb-3">
+                  Chief Technology Officer specializing in backend systems and technical strategy.
+                </p>
+                <div className="space-y-2">
+                  <Badge variant="secondary" className="mr-2">Backend</Badge>
+                  <Badge variant="secondary" className="mr-2">Technology</Badge>
+                  <Badge variant="secondary">Strategy</Badge>
+                </div>
+                <p className="text-sm text-gray-500 mt-3">
+                  Contributed to backend development and technical leadership
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Founding Team */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-dark mb-4">Our Founding Team</h2>
